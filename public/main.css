@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, #03383c, #3fa0a7);
+    background-repeat: no-repeat;
+}
+
+.header {
+    width: 100vw;
+    border-bottom: 2px solid black;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3fa0a7;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    justify-content: space-around;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover {
+    color: white;
+}
+
+.loja {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 510px;
+    border: 5px solid black;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #cac8d5, #f5f1df);
+}
+.imagem {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+.titulo {
+    color: black;
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+}
+.texto {
+    height: 80px;
+    max-width: 200px;
+    text-align: center;
+}
+span {
+    color: #193085;
+}
+.categoria {
+    margin-bottom: 10px;
+}
+.container-categoria-imagem {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.money {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    margin-top: 20px;
+}
+.quantidade:hover {
+    color: #a83e20;
+}
+.preco:hover {
+    color: #a83e20;
+}
+
+.texto-footer {
+    color: #fff;
+}
+.footer {
+    border-top: 2px solid black;
+    height: 100px;
+    width: 100%;
+    background: #2e88e8;
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.mensagem {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.class {
+    height: 76vh;
+}
+
+.desconhecido {
+    margin-left: 20rem;
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul li a {
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: black;
+    }
+}

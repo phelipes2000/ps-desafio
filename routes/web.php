@@ -8,6 +8,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\LocaleController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\SiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,3 +53,6 @@ Route::middleware('locale')->group(function () {
         });
     });
 });
+
+Route::get('categorias', [SiteController::class, 'categorias'])->name('site.categorias');
+Route::get('produtos', [SiteController::class, 'produtos'])->name('site.produtos');
